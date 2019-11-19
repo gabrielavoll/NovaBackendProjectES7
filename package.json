@@ -1,0 +1,28 @@
+{
+  "name": "NovaBackendProject",
+  "version": "1.0.0",
+  "description": "a small backend api project for Nova Credit second stage interview",
+  "main": "index.js",
+  "author": "Gabriela Voll",
+  "license": "MIT",
+  "scripts": {
+    "bab": "babel --presets es2015 -o build/server.bundle.js",
+    "start": "node build/server.bundle.js",
+    "webpack": "rm -rf ./build; webpack; cp index.html ./build/index.html"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-cli": "",
+    "babel-loader": "^8.0.6",
+    "body-parser": "",
+    "cookie-parser": "",
+    "express": "",
+    "fs": "",
+    "html-webpack-plugin": "^3.2.0",
+    "pg": "",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
